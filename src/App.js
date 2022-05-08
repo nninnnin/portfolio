@@ -1,7 +1,8 @@
+import React from "react";
 import styled from "styled-components";
 
 function App() {
-  return <Container></Container>;
+  return <Container>호잇 호잇..</Container>;
 }
 
 const Container = styled.div`
