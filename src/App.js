@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: orangered;
+    background-color: #fff;
     color: white;
     font-family: "Spoqa Han Sans Neo", "sans-serif";
     font-weight: 300;
@@ -76,11 +77,13 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Container = styled.div`
-  width: 30vw;
+  background-color: orangered;
+  width: 100%;
+  max-width: 360px;
   margin: 0 auto;
   min-height: 100vh;
 
-  background-color: navy;
+  /* background-color: navy; */
 `;
 
 const Header = styled.h1`
