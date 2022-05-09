@@ -8,7 +8,7 @@ Next.js를 사용하여 개발하였습니다.
 바닐라코딩 앱  
 바닐라코딩 앱을 개발하였습니다.  
 자료구조 개념을 사용하여 알파벳 순서를 맞추는 게임을 할 수 있습니다.  
-Expo가 아닌 순수 React Native를 사용하였고, 전역 상태관리와 서버 데이터 가져오기에는 Apollo client를 사용했습니다.  
+Expo가 아닌 순수 React Native와 TypeScript를 사용하였고, 전역 상태관리와 서버 데이터 가져오기에는 Apollo client(GraphQL)를 사용했습니다.  
 ![rn1](/rn-1.png)  
 ![rn2](/rn-2.png)
 
