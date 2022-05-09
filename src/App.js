@@ -84,7 +84,7 @@ const Container = styled.div`
   margin: 0 auto;
   min-height: 100vh;
 
-  /* background-color: navy; */
+  padding-bottom: 3em;
 `;
 
 const Header = styled.h1`
