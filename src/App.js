@@ -63,6 +63,7 @@ const GlobalStyle = createGlobalStyle`
   p {
     padding-left: 1em;
     line-height: 1.5em;
+    word-break: keep-all;
 
     &::first-line {
       line-height: 3em;
