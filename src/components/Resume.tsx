@@ -13,6 +13,55 @@ const Resume = () => {
     <div>
       <Section>
         <div className="desc">
+          <h1>저스틴 블로그</h1>
+          <p>
+            주로 기술 경험을 기록하기 위한 목적의 개인 블로그입니다.
+            <br />
+            원활한 에디팅 경험을 위해 Markdown 문법 미리보기, 드래그-드랍으로
+            이미지 업로드, 코드 신택스 하이라이팅, 코드 수정 시 들여쓰기 수준
+            맞춤 등의 기능을 직접 개발해 사용중입니다.
+            <br />
+            <br />
+            <a href="https://justindglee.com">여기</a>에서 운영중인 서비스를
+            확인할 수 있습니다.
+          </p>
+
+          <TechStack
+            stacks={[
+              {
+                name: "Gatsby",
+                icon: "gatsbyjs",
+              },
+              {
+                name: "Strapi",
+                icon: "strapi",
+              },
+              {
+                name: "TypeScript",
+                icon: "typescript",
+              },
+              {
+                name: "Recoil",
+                icon: "recoil",
+              },
+              {
+                name: "GraphQL",
+                icon: "graphql",
+              },
+            ]}
+          />
+        </div>
+
+        <Video autoPlay loop muted playsInline>
+          <source
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/blog-intro.mp4"
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+
+      <Section>
+        <div className="desc">
           <h1>찹스틱스 소비자 플랫폼</h1>
           <p>
             찹스틱스의 소비자 플랫폼의 클라이언트를 개발하였습니다. 판매자
@@ -55,8 +104,6 @@ const Resume = () => {
         <Image alt="chopsticks-consumer" src={ChopsticksConsumerGif} />
       </Section>
 
-      <hr />
-
       <Section>
         <div className="desc">
           <h1>찹스틱스 판매자 플랫폼</h1>
@@ -93,8 +140,6 @@ const Resume = () => {
           <source src={ChopsticksSellerMP4} type="video/mp4" />
         </Video>
       </Section>
-
-      <hr />
 
       <Section>
         <div className="desc">
@@ -134,8 +179,6 @@ const Resume = () => {
         />
       </Section>
 
-      <hr />
-
       <Section>
         <div className="desc">
           <h1>바닐라코딩 앱</h1>
@@ -149,6 +192,7 @@ const Resume = () => {
             </a>
             에서 플레이스토어에 배포된 앱을 확인할 수 있습니다.
           </p>
+
           <TechStack
             stacks={[
               {
@@ -166,7 +210,8 @@ const Resume = () => {
             ]}
           />
         </div>
-        <Carousel
+
+        {/* <Carousel
           images={[
             {
               alt: "rn1",
@@ -177,10 +222,16 @@ const Resume = () => {
               src: "/rn-2.png",
             },
           ]}
+        /> */}
+
+        <Image
+          alt="rn1"
+          src="/rn-1.png"
+          style={{
+            objectFit: "contain",
+          }}
         />
       </Section>
-
-      <hr />
 
       <Section>
         <div className="desc">
@@ -211,8 +262,6 @@ const Resume = () => {
         />
       </Section>
 
-      <hr />
-
       <Section>
         <div className="desc">
           <h1>피크닉 정원만들기 전시</h1>
@@ -240,8 +289,6 @@ const Resume = () => {
         </div>
         <Image alt="piet1" src="/piet-1.gif" />
       </Section>
-
-      <hr />
 
       <Section>
         <div className="desc">
@@ -278,8 +325,9 @@ const Resume = () => {
 const Section = styled.div`
   h1 {
     font-size: 1.2em;
-    margin-top: 1em;
   }
+
+  padding: 2em 0;
 
   @media only screen and (max-width: 480px) {
     height: 100svh;
@@ -308,9 +356,6 @@ const Section = styled.div`
   }
 
   @media only screen and (min-width: 481px) {
-    border-top: dashed gainsboro 1px;
-    border-bottom: 1px dashed gainsboro;
-
     display: flex;
 
     .desc {
@@ -322,15 +367,12 @@ const Section = styled.div`
       display: flex;
       flex-direction: column;
     }
-
-    h1 {
-      font-size: 1.1em;
-    }
   }
 `;
 
 const mediaStyle = css`
   width: 100%;
+  background-color: black;
 
   @media only screen and (min-width: 481px) {
     flex: 1;

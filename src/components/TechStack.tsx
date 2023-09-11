@@ -1,6 +1,6 @@
 import React from "react";
 import { map } from "fxjs";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import useMapIds from "../hooks/useMapIds.ts";
 import Badge, { Icons } from "./Badge.tsx";
 
@@ -38,7 +38,6 @@ const Container = styled.div`
   }
 
   margin-top: auto;
-  margin-bottom: 1em;
 `;
 
 export default TechStack;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import React from "react";
 
 const Header = ({ children }) => {
@@ -7,6 +7,7 @@ const Header = ({ children }) => {
 
 const Container = styled.h1`
   letter-spacing: 9px;
+  font-weight: 600;
 
   padding: 1em;
   scroll-snap-align: start;
