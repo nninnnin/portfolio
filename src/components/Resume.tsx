@@ -325,6 +325,7 @@ const Resume = () => {
 const Section = styled.div`
   h1 {
     font-size: 1.2em;
+    font-weight: 500;
   }
 
   padding: 2em 0;
@@ -338,10 +339,6 @@ const Section = styled.div`
     justify-content: center;
 
     scroll-snap-align: start;
-
-    .desc {
-      font-size: 1.3em;
-    }
 
     img,
     video {
@@ -360,7 +357,6 @@ const Section = styled.div`
 
     .desc {
       flex: 1;
-      font-size: 16px;
       padding-left: 1em;
       padding-right: 0.5em;
 
@@ -382,11 +378,15 @@ const mediaStyle = css`
 
 const Image = styled.img`
   ${mediaStyle}
+
+  min-height: 30vh;
 `;
 
 const Video = styled.video`
   ${mediaStyle}
   object-fit: cover;
+
+  min-height: 30vh;
 `;
 
 export default Resume;

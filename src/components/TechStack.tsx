@@ -35,6 +35,7 @@ const Container = styled.div`
     margin-top: 3px;
     margin-bottom: 3px;
     margin-right: 5px;
+    font-size: 0.5em;
   }
 
   margin-top: auto;
