@@ -389,7 +389,7 @@ const Section = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 
     img,
     video {
