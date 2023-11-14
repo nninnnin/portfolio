@@ -42,6 +42,7 @@ const Resume = () => {
           <p>
             주로 기술 경험을 기록하기 위한 목적의 개인 블로그입니다.
             <br />
+            <br />
             원활한 에디팅 경험을 위해 Markdown 문법 미리보기, 드래그-드랍으로
             이미지 업로드, 코드 신택스 하이라이팅, 코드 수정 시 들여쓰기 수준
             맞춤 등의 기능을 직접 개발해 사용중입니다.
@@ -94,6 +95,10 @@ const Resume = () => {
             있습니다.
             <br />
             <br />
+            상품 선택 및 카트, 주문상태 구현을 위한 데이터 구조 설계와 결제 모듈
+            연동, 회원가입 및 내 정보 관리 기능을 개발을 담당했습니다.
+            <br />
+            <br />
             <a href="https://chopsticks.market">여기</a>에서 운영중인 서비스를
             확인할 수 있습니다.
           </p>
@@ -137,6 +142,11 @@ const Resume = () => {
           <p>
             찹스틱스의 판매자 플랫폼의 클라이언트를 개발하였습니다. 판매자로
             승인된 샵의 정보를 등록하고, 해당 샵의 상품들을 등록할 수 있습니다.
+            <br />
+            <br />
+            상품에는 필수와 선택 옵션을 추가하고 가격과 재고를 입력 및 수정할 수
+            있으며 이외 조건부 무료배송 조건 등의 상품 관련 정보 등록 및 수정에
+            필요한 데이터 구조 설계 및 기능 구현을 담당했습니다.
           </p>
 
           <TechStack
@@ -392,8 +402,11 @@ const Section = styled.div`
 
     &:first-child {
       scroll-snap-align: unset;
-      height: calc(100svh - 81.19px);
-      padding-top: 1em;
+      height: calc(100svh - 81.19px) !important;
+
+      h1 {
+        margin-top: -60px;
+      }
 
       @media only screen and (max-height: 620px) {
         scroll-snap-align: center;
