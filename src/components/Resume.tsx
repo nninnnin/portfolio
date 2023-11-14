@@ -171,10 +171,11 @@ const Resume = () => {
           />
         </div>
 
-        {/* <Image src={ChopsticksSellerGif} /> */}
         <Video autoPlay loop muted playsInline>
-          <source src={ChopsticksSellerWebM} type="video/webm" />
-          <source src={ChopsticksSellerMP4} type="video/mp4" />
+          <source
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/chopsticks-seller.mp4"
+            type="video/mp4"
+          />
         </Video>
       </Section>
 
