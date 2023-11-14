@@ -387,12 +387,13 @@ const Section = styled.div`
     }
 
     h1 {
-      margin-top: -82.19px;
+      margin-top: -81.19px;
     }
 
     &:first-child {
       scroll-snap-align: unset;
-      height: calc(100svh - 42.19px);
+      height: calc(100svh - 81.19px);
+      padding-top: 1em;
 
       @media only screen and (max-height: 620px) {
         scroll-snap-align: center;
