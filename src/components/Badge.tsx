@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import FigmaIcon from "../icons/figma.svg";
 import TypeScriptIcon from "../icons/ts.svg";
@@ -57,7 +57,7 @@ const Badge = ({
 const Container = styled.span`
   color: #171717;
   background-color: white;
-  box-shadow: 1px 1px 3px 1px gainsboro;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.12);
 
   display: flex;
   align-items: center;
@@ -72,17 +72,21 @@ const Container = styled.span`
   `};
 
   border-radius: 7px;
-  padding: 8px;
-  padding-top: 7px;
-  padding-right: 10px;
+  padding: 6px;
+  padding-left: 7px;
+  padding-right: 8px;
 
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Pretendard", "sans-serif";
   font-weight: 500;
+  line-height: 11.2px;
+
+  margin-right: 4px;
+  margin-bottom: 4px;
 
   & > img {
     height: auto;
-    margin-right: 6px;
+    margin-right: 4px;
   }
 `;
 

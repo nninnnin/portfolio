@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import GlobalStyle from "./GlobalStyle";
 import Resume from "./components/Resume";
 import Header from "./components/Header";

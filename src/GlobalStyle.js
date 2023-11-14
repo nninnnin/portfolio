@@ -1,9 +1,13 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components/macro";
 
 export default createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
+  }
+
+  * {
+    color: rgba(1,1,1, 0.69) !important;
   }
 
   body {

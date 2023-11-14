@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components/macro";
 import React from "react";
 import Carousel from "./Carousel.js";
 import TechStack from "./TechStack.tsx";
@@ -323,9 +323,18 @@ const Resume = () => {
 };
 
 const Section = styled.div`
+  border-top: 1px solid gainsboro;
+
+  &:last-child {
+    border-bottom: 1px solid gainsboro;
+  }
+
   h1 {
     font-size: 1.2em;
     font-weight: 500;
+    letter-spacing: 2px;
+    margin-left: 0.8em;
+    margin-bottom: 0.5em;
   }
 
   padding: 2em 0;
@@ -338,7 +347,7 @@ const Section = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 
     img,
     video {
@@ -346,9 +355,12 @@ const Section = styled.div`
     }
 
     &:first-child {
-      padding-top: 0;
       scroll-snap-align: unset;
       height: calc(100svh - 82.19px);
+
+      h1 {
+        margin-top: -82.19px;
+      }
     }
   }
 
@@ -364,29 +376,47 @@ const Section = styled.div`
       flex-direction: column;
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.4em;
+
+      margin-bottom: 1.2em;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .desc {
+      text-align: justify;
+    }
+
+    padding: 0;
+  }
 `;
 
 const mediaStyle = css`
   width: 100%;
   background-color: black;
 
+  height: 260px;
+
   @media only screen and (min-width: 481px) {
     flex: 1;
     width: 300px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-top: 16px;
   }
 `;
 
 const Image = styled.img`
   ${mediaStyle}
-
-  min-height: 30vh;
 `;
 
 const Video = styled.video`
   ${mediaStyle}
   object-fit: cover;
-
-  min-height: 30vh;
 `;
 
 export default Resume;

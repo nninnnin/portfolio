@@ -14,6 +14,8 @@ const Container = styled.h1`
 
   @media only screen and (max-width: 480px) {
     padding-left: 0;
+    padding-right: 0;
+    text-align: center;
   }
 `;
 
