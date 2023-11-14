@@ -33,7 +33,7 @@ const TechStack = ({ stacks }: Props) => {
 };
 
 const Container = styled.div`
-  display: flex;
+  display: none;
   align-items: center;
   flex-wrap: wrap;
 

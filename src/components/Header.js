@@ -17,6 +17,10 @@ const Container = styled.h1`
     padding-right: 0;
     text-align: center;
   }
+
+  @media only screen and (max-height: 620px) {
+    display: none;
+  }
 `;
 
 export default Header;

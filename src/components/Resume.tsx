@@ -13,6 +13,31 @@ const Resume = () => {
     <div>
       <Section>
         <div className="desc">
+          <h1>앤어플랜트 이모션디코더</h1>
+          <p>
+            클라이언트 앤어플랜트의 요청으로 레벨나인에서 개발된 이모션디코더
+            프로젝트 입니다.
+            <br />
+            <br />
+            일반적인 스크롤 방식과는 달리 유저의 스크롤을 인식해 마치 장면이
+            넘어가듯 보여지는 페이지 트랜지션을 구현했습니다.
+            <br />
+            <br />
+            <a href="https://www.decoding-my-emotion.com/">여기</a>에서 운영중인
+            서비스를 확인할 수 있습니다.
+          </p>
+        </div>
+
+        <Video autoPlay loop muted playsInline>
+          <source
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%A9%E1%84%89%E1%85%A7%E1%86%AB%E1%84%83%E1%85%B5%E1%84%8F%E1%85%A9%E1%84%83%E1%85%A5-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9-%E1%84%87%E1%85%B5%E1%84%83%E1%85%B5%E1%84%8B%E1%85%A9.mp4"
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+
+      <Section>
+        <div className="desc">
           <h1>저스틴 블로그</h1>
           <p>
             주로 기술 경험을 기록하기 위한 목적의 개인 블로그입니다.
@@ -66,7 +91,9 @@ const Resume = () => {
           <p>
             찹스틱스의 소비자 플랫폼의 클라이언트를 개발하였습니다. 판매자
             플랫폼을 통해 등록된 상품의 내용을 확인, 카트에 담고 주문할 수
-            있습니다. <br />
+            있습니다.
+            <br />
+            <br />
             <a href="https://chopsticks.market">여기</a>에서 운영중인 서비스를
             확인할 수 있습니다.
           </p>
@@ -337,6 +364,11 @@ const Section = styled.div`
     margin-bottom: 0.5em;
   }
 
+  p {
+    padding-right: 2em;
+    word-break: keep-all;
+  }
+
   padding: 2em 0;
 
   @media only screen and (max-width: 480px) {
@@ -354,12 +386,21 @@ const Section = styled.div`
       max-height: 40svh;
     }
 
+    h1 {
+      margin-top: -82.19px;
+    }
+
     &:first-child {
       scroll-snap-align: unset;
-      height: calc(100svh - 82.19px);
+      height: calc(100svh - 42.19px);
 
-      h1 {
-        margin-top: -82.19px;
+      @media only screen and (max-height: 620px) {
+        scroll-snap-align: center;
+        height: 100svh !important;
+
+        h1 {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -370,7 +411,6 @@ const Section = styled.div`
     .desc {
       flex: 1;
       padding-left: 1em;
-      padding-right: 0.5em;
 
       display: flex;
       flex-direction: column;
@@ -386,6 +426,10 @@ const Section = styled.div`
       text-align: center;
     }
 
+    p {
+      padding-right: 0;
+    }
+
     .desc {
       text-align: justify;
     }
@@ -395,18 +439,15 @@ const Section = styled.div`
 `;
 
 const mediaStyle = css`
-  width: 100%;
   background-color: black;
 
+  flex: 1;
+  width: 300px;
   height: 260px;
-
-  @media only screen and (min-width: 481px) {
-    flex: 1;
-    width: 300px;
-  }
 
   @media only screen and (max-width: 480px) {
     margin-top: 16px;
+    width: 100%;
   }
 `;
 
@@ -414,9 +455,9 @@ const Image = styled.img`
   ${mediaStyle}
 `;
 
-const Video = styled.video`
+const Video = styled.video<{ objectFit: string }>`
   ${mediaStyle}
-  object-fit: cover;
+  object-fit: ${({ objectFit }) => (objectFit ? objectFit : "cover")};
 `;
 
 export default Resume;
