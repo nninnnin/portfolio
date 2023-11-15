@@ -18,7 +18,8 @@ const Footer = () => {
 };
 
 const Container = styled.footer`
-  height: 100svh;
+  height: 4cm;
+  padding-bottom: 0.3cm;
 
   position: relative;
 
@@ -26,6 +27,10 @@ const Container = styled.footer`
   place-items: center;
 
   scroll-snap-align: end;
+
+  @media screen and (max-width: 480px) {
+    height: 100svh;
+  }
 `;
 
 const Contact = styled.div`
