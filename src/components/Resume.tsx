@@ -1,22 +1,40 @@
-import styled, { css } from "styled-components/macro";
 import React from "react";
+import styled, { css } from "styled-components/macro";
+
 import Carousel from "./Carousel.js";
 import TechStack from "./TechStack.tsx";
-
 import ChopsticksConsumerGif from "../images/chopsticks-consumer.gif";
-// import ChopsticksSellerGif from "../images/chopsticks-seller.gif";
-import ChopsticksSellerWebM from "../images/chopsticks-seller.webm";
-import ChopsticksSellerMP4 from "../images/chopsticks-seller.mp4";
 
 const Resume = () => {
   return (
     <div>
       <Section>
         <div className="desc">
+          <h1>레벨나인 옵티컬미 포텐셜미</h1>
+          <p>
+            피크닉의 전시 `회사만들기`에 참여한 레벨나인의 프로젝트 `옵티컬미
+            포텐셜미`를 개발했습니다.
+            <br />
+            <br />
+            QR코드로 접근해 단계별로 질문에 답하고 답변 정보가 포함된 바코드를
+            출력합니다. 이후 사용자는 해당 바코드를 인식시켜 자신에게 어울리는
+            유형을 확인할 수 있습니다.
+            <br />
+            <br />
+            <a href="https://opticalmepotentialme.com/">여기</a>에서 운영중인
+            서비스를 확인할 수 있습니다.
+          </p>
+        </div>
+
+        <Image src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/piknic-opticalme.jpeg" />
+      </Section>
+
+      <Section>
+        <div className="desc">
           <h1>앤어플랜트 이모션디코더</h1>
           <p>
-            클라이언트 앤어플랜트의 요청으로 레벨나인에서 개발된 이모션디코더
-            프로젝트 입니다.
+            클라이언트 앤어플랜트의 요청으로 레벨나인의 구성원으로서 개발한
+            이모션디코더 프로젝트를 개발했습니다.
             <br />
             <br />
             일반적인 스크롤 방식과는 달리 유저의 스크롤을 인식해 마치 장면이
@@ -302,11 +320,15 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>피크닉 정원만들기 전시</h1>
+          <h1>피크닉 정원 만들기 전시</h1>
           <p>
-            키오스크 전시공간 피크닉의 전시 "정원만들기" 에 사용될 키오스크를
-            개발하였습니다. 드래그 앤 드롭 등의 기능을 라이브러리 의존없이 직접
-            구현하였습니다.
+            키오스크 전시공간 피크닉의 전시 `정원 만들기`에 사용될 키오스크를
+            개발하였습니다.
+            <br />
+            <br />
+            마우스 드래그 앤 드롭으로 정원 설계도를 이동하고 확대 및 축소하며
+            설계도를 탐색할 수 있습니다. 설계도에 표기된 구역을 클릭하면 각각의
+            자세한 식재 정보를 확인할 수 있습니다.
             <br />
             <br />
             <a href="https://piknic-piet-oudolf.netlify.app/">여기</a>에서
@@ -332,9 +354,12 @@ const Resume = () => {
         <div className="desc">
           <h1>피크닉 사울레이터 전시</h1>
           <p>
-            이미지 슬라이더 전시공간 피크닉의 전시 "창문을 통해 어렴풋이" 에
-            사용될 키오스크를 개발하였습니다. 인스타그램 링크로 이미지를 가져와
-            슬라이더로 표현합니다.
+            전시공간 피크닉의 전시 `창문을 통해 어렴풋이`에 전시된 이미지
+            슬라이더를 개발하였습니다.
+            <br />
+            <br />
+            프록시서버에서 인스타그램 링크를 이미지로 가져와 슬라이더로
+            표현합니다.
           </p>
           <TechStack
             stacks={[
@@ -398,7 +423,12 @@ const Section = styled.div`
     }
 
     h1 {
-      margin-top: -81.19px;
+      margin-top: -20px;
+      font-size: min(3vh, 5vw) !important;
+    }
+
+    p {
+      font-size: min(2.5vh, 4vw);
     }
 
     &:first-child {
@@ -406,7 +436,7 @@ const Section = styled.div`
       height: calc(100svh - 81.19px) !important;
 
       h1 {
-        margin-top: -60px;
+        margin-top: -20px;
       }
 
       @media only screen and (max-height: 620px) {
@@ -438,7 +468,7 @@ const Section = styled.div`
 
       margin-bottom: 1.2em;
       margin-left: 0;
-      text-align: center;
+      text-align: left;
     }
 
     p {
@@ -446,7 +476,7 @@ const Section = styled.div`
     }
 
     .desc {
-      text-align: justify;
+      text-align: left;
     }
 
     padding: 0;

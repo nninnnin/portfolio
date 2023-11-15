@@ -18,8 +18,7 @@ const Footer = () => {
 };
 
 const Container = styled.footer`
-  height: 5cm;
-  padding-bottom: 2.5cm;
+  height: 100svh;
 
   position: relative;
 
