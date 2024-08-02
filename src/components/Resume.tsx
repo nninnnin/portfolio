@@ -38,23 +38,24 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>영등포 YDP DADADA AR 앱</h1>
+          <h1>코리아 메모리얼 AR 앱</h1>
           <p>
-            영등포 타임스퀘어 앞 광장에 위치한 문화라운지 따따따의 미디어와
-            연관된 3D 모델들을 증강하는 AR 앱을 개발하였습니다.
+            보훈부 행사 '코리아 메모리얼'에 사용된 AR 앱을 개발하였습니다.
             <br />
             <br />
-            ModelViewer를 사용해 GLB 형식의 모델들을 증강합니다.
+            Mind.AR의 얼굴인식 기능을 이용하여 페이스 필터 기능을 개발하였으며
+            AR.js의 위치기반 AR 기능을 이용하여 올림픽공원의 특정 위치에서만
+            증강되는 3D 모델을 확인할 수 있습니다.
             <br />
             <br />
-            <a href="https://ar-dadada.ccydp.kr/">여기</a>에서 운영중인 서비스를
-            확인할 수 있습니다.
+            <a href="https://www.memorial-timecube.com/">여기</a>에서 운영중인
+            서비스를 확인할 수 있습니다.
           </p>
         </div>
 
         <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
           <source
-            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/ydp-ar.mp4"
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/korea-memorial.mp4"
             type="video/mp4"
           />
         </Video>
@@ -77,6 +78,30 @@ const Resume = () => {
         <Video autoPlay loop muted playsInline>
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/ydp-whole.mp4"
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+
+      <Section>
+        <div className="desc">
+          <h1>영등포 YDP DADADA AR 앱</h1>
+          <p>
+            영등포 타임스퀘어 앞 광장에 위치한 문화라운지 따따따의 미디어와
+            연관된 3D 모델들을 증강하는 AR 앱을 개발하였습니다.
+            <br />
+            <br />
+            ModelViewer를 사용해 GLB 형식의 모델들을 증강합니다.
+            <br />
+            <br />
+            <a href="https://ar-dadada.ccydp.kr/">여기</a>에서 운영중인 서비스를
+            확인할 수 있습니다.
+          </p>
+        </div>
+
+        <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
+          <source
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/ydp-ar.mp4"
             type="video/mp4"
           />
         </Video>
