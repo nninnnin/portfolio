@@ -21,6 +21,10 @@ const Resume = () => {
             <br />
             p5.js를 사용하여 유저의 터치에 반응하여 무너지는 3D 타일을 구현하여
             상호작용의 즐거움을 더했습니다.
+            <br />
+            <br />
+            <a href="https://www.wishfullmoon.kr/">여기</a>에서 운영중인
+            서비스를 확인할 수 있습니다.
           </p>
         </div>
 
@@ -41,6 +45,10 @@ const Resume = () => {
             <br />
             <br />
             ModelViewer를 사용해 GLB 형식의 모델들을 증강합니다.
+            <br />
+            <br />
+            <a href="https://ar-dadada.ccydp.kr/">여기</a>에서 운영중인 서비스를
+            확인할 수 있습니다.
           </p>
         </div>
 
