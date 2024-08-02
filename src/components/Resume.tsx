@@ -10,6 +10,72 @@ const Resume = () => {
     <div>
       <Section>
         <div className="desc">
+          <h1>청주에 뜬 달 인터랙티브 모바일 웹</h1>
+          <p>
+            청주시립미술관의 강익중 특별전 '청주에 뜬 달' 의 모바일 웹을
+            제작하였습니다.
+            <br />
+            <br />
+            모바일에서 작성된 메세지를 서버로 전송하고, 사용자의 정보를 전시장의
+            바코드 리더로 읽어 월 미디어에서 확인할 수 있도록 구현하였습니다.
+            <br />
+            p5.js를 사용하여 유저의 터치에 반응하여 무너지는 3D 타일을 구현하여
+            상호작용의 즐거움을 더했습니다.
+          </p>
+        </div>
+
+        <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
+          <source
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/cheongju-main.mov"
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+
+      <Section>
+        <div className="desc">
+          <h1>영등포 YDP DADADA AR 앱</h1>
+          <p>
+            영등포 타임스퀘어 앞 광장에 위치한 문화라운지 따따따의 미디어와
+            연관된 3D 모델들을 증강하는 AR 앱을 개발하였습니다.
+            <br />
+            <br />
+            ModelViewer를 사용해 GLB 형식의 모델들을 증강합니다.
+          </p>
+        </div>
+
+        <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
+          <source
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/ydp-ar.mp4"
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+
+      <Section>
+        <div className="desc">
+          <h1>영등포 YDP DADADA 미디어 3종</h1>
+          <p>
+            영등포 타임스퀘어 앞 광장에 위치한 문화라운지 따따따에 설치된
+            인터랙티브 미디어 3종과 AR 앱을 개발하였습니다.
+            <br />
+            <br />
+            조이스틱을 사용해 미디어를 조작할 수 있으며 각각 다른 종류의 정보를
+            탐색하고, 게임 형식을 통해 얻어진 데이터를 기반으로 자신에게
+            어울리는 미디어를 추천받을 수 있습니다.
+          </p>
+        </div>
+
+        <Video autoPlay loop muted playsInline>
+          <source
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/ydp-whole.mp4"
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+
+      <Section>
+        <div className="desc">
           <h1>레벨나인 옵티컬미 포텐셜미</h1>
           <p>
             피크닉의 전시 `회사만들기`에 참여한 레벨나인의 프로젝트 `옵티컬미
