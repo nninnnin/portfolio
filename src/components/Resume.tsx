@@ -4,10 +4,19 @@ import styled, { css } from "styled-components/macro";
 import Carousel from "./Carousel.js";
 import TechStack from "./TechStack.tsx";
 import ChopsticksConsumerGif from "../images/chopsticks-consumer.gif";
+import MobileList from "./MobileList.tsx";
 
 const Resume = () => {
+  const isMobile = window.innerWidth <= 480;
+
   return (
     <div>
+      {isMobile && (
+        <Section>
+          <MobileList />
+        </Section>
+      )}
+
       <Section>
         <div className="desc">
           <h1>청주에 뜬 달 인터랙티브 모바일 웹</h1>
@@ -91,7 +100,8 @@ const Resume = () => {
             연관된 3D 모델들을 증강하는 AR 앱을 개발하였습니다.
             <br />
             <br />
-            ModelViewer를 사용해 GLB 형식의 모델들을 증강합니다.
+            AR은 ModelViewer를 사용해 GLB 형식의 모델들을 증강하는 방식으로
+            구현되었습니다.
             <br />
             <br />
             <a href="https://ar-dadada.ccydp.kr/">여기</a>에서 운영중인 서비스를
@@ -530,7 +540,7 @@ const Section = styled.div`
       font-size: min(2.5vh, 4vw);
     }
 
-    &:first-child {
+    /* &:first-child {
       scroll-snap-align: unset;
       height: calc(100svh - 81.19px) !important;
 
@@ -546,7 +556,7 @@ const Section = styled.div`
           margin-top: 0;
         }
       }
-    }
+    } */
   }
 
   @media only screen and (min-width: 481px) {

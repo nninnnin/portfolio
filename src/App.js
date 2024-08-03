@@ -5,11 +5,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
+  const isMobile = window.innerWidth <= 480;
+
   return (
     <>
       <GlobalStyle />
       <Container>
-        <Header>작업물 열람</Header>
+        {!isMobile && <Header>작업물 열람</Header>}
+
         <Resume />
         <Footer />
       </Container>
