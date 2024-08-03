@@ -9,9 +9,9 @@ const Footer = () => {
         <span>
           <label>이메일:</label> nninnnin7@gmail.com
         </span>
-        <span>
+        {/* <span>
           <label>인스타그램:</label> @justindglee
-        </span>
+        </span> */}
       </Contact>
     </Container>
   );
