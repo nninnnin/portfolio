@@ -7,7 +7,11 @@ export default createGlobalStyle`
   }
 
   * {
-    color: rgba(1,1,1, 0.5) !important;
+    color: rgba(1,1,1, 0.69) !important;
+
+    @media only screen and (max-width: 480px) {
+      color: rgba(1,1,1, 0.5) !important;
+    }
   }
 
   body {
