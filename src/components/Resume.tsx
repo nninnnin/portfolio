@@ -72,7 +72,7 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>영등포 YDP DADADA 미디어 3종</h1>
+          <h1>YDP DADADA 미디어 3종</h1>
           <p>
             영등포 타임스퀘어 앞 광장에 위치한 문화라운지 따따따에 설치된
             인터랙티브 미디어 3종을 개발하였습니다.
@@ -94,7 +94,7 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>영등포 YDP DADADA AR 앱</h1>
+          <h1>YDP DADADA AR 앱</h1>
           <p>
             영등포 타임스퀘어 앞 광장에 위치한 문화라운지 따따따의 미디어와
             연관된 3D 모델들을 증강하는 AR 앱을 개발하였습니다.
