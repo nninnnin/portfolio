@@ -33,22 +33,4 @@ const Container = styled.footer`
   }
 `;
 
-const Contact = styled.div`
-  font-weight: 500;
-
-  display: flex;
-  flex-direction: column;
-  place-self: center right;
-  align-items: flex-end;
-
-  span {
-    margin-right: 2mm;
-    padding: 1mm;
-
-    label {
-      min-width: 300px;
-    }
-  }
-`;
-
 export default Footer;
