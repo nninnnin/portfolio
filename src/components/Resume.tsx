@@ -19,21 +19,20 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>청주에 뜬 달 인터랙티브 모바일 웹</h1>
+          <h1>
+            <a href="https://www.wishfullmoon.kr/">청주에 뜬 달</a>
+          </h1>
           <p>
-            청주시립미술관의 강익중 특별전 '청주에 뜬 달' 의 모바일 웹을
-            제작하였습니다.
+            청주시립미술관의 강익중 특별전 `청주에 뜬 달` 의 전시 체험에 사용된
+            웹 개발에 참여하였습니다. 모바일과 데스크탑 이용을 모두 대응합니다.
             <br />
             <br />
-            모바일에서 작성된 메세지를 서버로 전송하고, 사용자의 정보를 전시장의
-            바코드 리더로 읽어 월 미디어에서 확인할 수 있도록 구현하였습니다.
-            <br />
-            p5.js를 사용하여 유저의 터치에 반응하여 무너지는 3D 타일을 구현하여
-            상호작용의 즐거움을 더했습니다.
+            인트로를 포함 3단계를 거쳐 작성된 메세지를 서버로 전송하면 전시장 내
+            미디어 월에 시각적으로 표현된 메세지를 확인할 수 있습니다.
             <br />
             <br />
-            <a href="https://www.wishfullmoon.kr/">여기</a>에서 운영중인
-            서비스를 확인할 수 있습니다.
+            상호작용의 즐거움을 더하기위해 <code>p5.js</code>의 WebGL 모드를
+            사용하여 유저의 터치에 반응해 무너지는 3D 타일을 구현하였습니다.
           </p>
         </div>
 
@@ -47,18 +46,31 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>코리아 메모리얼 AR 앱</h1>
+          <h1>
+            <a href="https://www.memorial-timecube.com/">메모리얼 타임큐브</a>
+          </h1>
           <p>
-            보훈부 행사 '코리아 메모리얼'에 사용된 AR 앱을 개발하였습니다.
+            2024년 6월에 진행된 보훈부 행사{" "}
+            <a href="https://www.koreamemorialfesta.com/">
+              코리아 메모리얼 페스타
+            </a>
+            에 사용된 모바일 웹 `메모리얼 타임큐브`에 개발자로 참여하였습니다.
             <br />
             <br />
-            Mind.AR의 얼굴인식 기능을 이용하여 페이스 필터 기능을 개발하였으며
-            AR.js의 위치기반 AR 기능을 이용하여 올림픽공원의 특정 위치에서만
-            증강되는 3D 모델을 확인할 수 있습니다.
+            4종의 AR 컨텐츠를 확인할 수 있으며, UI 개발에는 Web Component를
+            사용해 코드 재사용성을 높였습니다. 인터랙션에 따라 재생과 정지가
+            가능한 Marquee 컴포넌트가 특징입니다.
             <br />
-            <br />
-            <a href="https://www.memorial-timecube.com/">여기</a>에서 운영중인
-            서비스를 확인할 수 있습니다.
+            <br />웹 AR 라이브러리{" "}
+            <code>
+              <a href="https://hiukim.github.io/mind-ar-js-doc/">MindAR</a>
+            </code>{" "}
+            의 얼굴인식 기능을 이용하여 페이스필터 컨텐츠를 개발하였으며, 좌표
+            위치 기반으로 증강되는 AR 컨텐츠 개발을 위해서는{" "}
+            <code>
+              <a href="https://ar-js-org.github.io/AR.js-Docs/">AR.js</a>
+            </code>{" "}
+            가 사용되었습니다.
           </p>
         </div>
 
@@ -72,7 +84,7 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>YDP DADADA 미디어 3종</h1>
+          <h1>YDP DADADA</h1>
           <p>
             영등포 타임스퀘어 앞 광장에 위치한 문화라운지 따따따에 설치된
             인터랙티브 미디어 3종을 개발하였습니다.
@@ -81,6 +93,14 @@ const Resume = () => {
             조이스틱을 사용해 미디어를 조작할 수 있으며 각각 다른 종류의 정보를
             탐색하고, 게임 형식을 통해 얻어진 데이터를 기반으로 자신에게
             어울리는 미디어를 추천받을 수 있습니다.
+            <br />
+            <br />
+            연속적인 카드 애니메이션을 구현하기 위해{" "}
+            <code>
+              <a href="https://gsap.com/">GSAP</a>
+            </code>
+            의 타임라인 기능을 사용하였고, 조이스틱 하드웨어의 인풋을 웹에서
+            이용하기 위해 Gamepad API를 사용하였습니다.
           </p>
         </div>
 
@@ -94,18 +114,19 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>YDP DADADA AR 앱</h1>
+          <h1>
+            <a href="https://ar-dadada.ccydp.kr/">YDP DADADA AR</a>
+          </h1>
           <p>
-            영등포 타임스퀘어 앞 광장에 위치한 문화라운지 따따따의 미디어와
-            연관된 3D 모델들을 증강하는 AR 앱을 개발하였습니다.
+            영등포 타임스퀘어 앞 광장에 위치한 `문화라운지 따따따`의 미디어와
+            연관된 3D 모델들을 AR 컨텐츠로 제공하는 모바일 웹을 개발하였습니다.
             <br />
             <br />
-            AR은 ModelViewer를 사용해 GLB 형식의 모델들을 증강하는 방식으로
-            구현되었습니다.
-            <br />
-            <br />
-            <a href="https://ar-dadada.ccydp.kr/">여기</a>에서 운영중인 서비스를
-            확인할 수 있습니다.
+            iOS와 안드로이드 각각의 네이티브 AR SDK를 이용할 수 있도록 돕는{" "}
+            <code>
+              <a href="https://modelviewer.dev/">ModelViewer</a>
+            </code>{" "}
+            를 사용하여 높은 퀄리티의 AR 컨텐츠를 제공합니다.
           </p>
         </div>
 
@@ -119,19 +140,23 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>레벨나인 옵티컬미 포텐셜미</h1>
+          <h1>
+            <a href="https://piknic-entrepreneurship.vercel.app/">
+              레벨나인 옵티컬미 포텐셜미
+            </a>
+          </h1>
           <p>
-            피크닉의 전시 `회사만들기`에 참여한 레벨나인의 프로젝트 `옵티컬미
-            포텐셜미`를 개발했습니다.
+            복합 문화공간 피크닉의 전시{" "}
+            <a href="https://piknic.kr/home/include/board_view.php?SEQ=CATEEXHIBITION0003">
+              회사만들기
+            </a>{" "}
+            에 참여한 레벨나인의 프로젝트 `옵티컬미 포텐셜미`에 모바일 웹
+            개발자로 참여하였습니다.
             <br />
             <br />
             QR코드로 접근해 단계별로 질문에 답하고 답변 정보가 포함된 바코드를
             출력합니다. 이후 사용자는 해당 바코드를 인식시켜 자신에게 어울리는
             유형을 확인할 수 있습니다.
-            <br />
-            <br />
-            <a href="https://opticalmepotentialme.com/">여기</a>에서 운영중인
-            서비스를 확인할 수 있습니다.
           </p>
         </div>
 
@@ -140,19 +165,22 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>앤어플랜트 이모션디코더</h1>
+          <h1>
+            <a href="https://www.decoding-my-emotion.com/">
+              앤어플랜트 이모션디코더
+            </a>
+          </h1>
           <p>
-            레벨나인의 개발자로서 앤어플랜트의 `감정해독기(Emotion Decoder)`
-            프로젝트를 개발하였습니다.
+            <a href="https://www.instagram.com/and_a_plant/">앤어플랜트</a>의
+            `감정해독기(Emotion Decoder)` 프로젝트에 웹 개발자로 참여하였습니다.
             <br />
             <br />
-            `이모션 스캐너`와 `이모션 파노라마`로 구성되어 있으며, 일반적인
-            스크롤 방식과는 달리 유저의 스크롤을 인식해 마치 장면이 넘어가듯
-            보여지는 페이지 트랜지션을 구현했습니다.
+            감정해독기는 크게 `이모션 스캐너`와 `이모션 파노라마`로 구성되어
+            있으며 각각 다른 질문과 결과물을 출력합니다.
             <br />
             <br />
-            <a href="https://www.decoding-my-emotion.com/">여기</a>에서 운영중인
-            서비스를 확인할 수 있습니다.
+            마치 장면이 넘어가듯 보여지는 페이지 트랜지션을 구현하기 위해
+            debounce/throttle을 활용했습니다.
           </p>
         </div>
 
@@ -166,57 +194,9 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>저스틴 블로그</h1>
-          <p>
-            주로 기술 경험을 기록하기 위한 목적의 개인 블로그입니다.
-            <br />
-            <br />
-            원활한 에디팅 경험을 위해 Markdown 문법 미리보기, 드래그-드랍으로
-            이미지 업로드, 코드 신택스 하이라이팅, 코드 수정 시 들여쓰기 수준
-            맞춤 등의 기능을 직접 개발해 사용중입니다.
-            <br />
-            <br />
-            <a href="https://justindglee.com">여기</a>에서 운영중인 서비스를
-            확인할 수 있습니다.
-          </p>
-
-          <TechStack
-            stacks={[
-              {
-                name: "Gatsby",
-                icon: "gatsbyjs",
-              },
-              {
-                name: "Strapi",
-                icon: "strapi",
-              },
-              {
-                name: "TypeScript",
-                icon: "typescript",
-              },
-              {
-                name: "Recoil",
-                icon: "recoil",
-              },
-              {
-                name: "GraphQL",
-                icon: "graphql",
-              },
-            ]}
-          />
-        </div>
-
-        <Video autoPlay loop muted playsInline>
-          <source
-            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/blog-intro.mp4"
-            type="video/mp4"
-          />
-        </Video>
-      </Section>
-
-      <Section>
-        <div className="desc">
-          <h1>찹스틱스 소비자 플랫폼</h1>
+          <h1>
+            <a href="https://chopsticks.market">찹스틱스 소비자 플랫폼</a>
+          </h1>
           <p>
             찹스틱스의 소비자 플랫폼을 개발하였습니다. 찹스틱스 판매자 플랫폼을
             통해 등록된 상품의 내용을 확인, 카트에 담고 주문할 수 있습니다.
@@ -224,10 +204,6 @@ const Resume = () => {
             <br />
             상품 선택 및 카트, 주문상태 구현을 위한 데이터 구조 설계와 결제 모듈
             연동, 회원가입 및 내 정보 관리 기능을 개발을 담당했습니다.
-            <br />
-            <br />
-            <a href="https://chopsticks.market">여기</a>에서 운영중인 서비스를
-            확인할 수 있습니다.
           </p>
 
           <TechStack
@@ -312,6 +288,14 @@ const Resume = () => {
           <p>
             바닐라코딩 포털 서비스를 기획, 디자인 및 개발하였습니다. 코스
             신청서를 작성, 결제하고 코스 컨텐츠를 확인할 수 있습니다.
+            <br />
+            <br />
+            컨텐츠 관리의 용이성을 위해 Node.js의 File system API를 사용해
+            폴더구조를 컨텐츠의 카테고리 구조로 사용하도록 구현하였습니다.
+            <br />
+            <br />
+            Markdown 문법을 파싱해 원하는 스타일로 렌더링하기 위해
+            remark/rehype를 사용하였습니다.
           </p>
           <TechStack
             stacks={[
@@ -346,16 +330,17 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>바닐라코딩 앱</h1>
+          <h1>단어 퍼즐 앱 워디(Wordie)</h1>
           <p>
-            퍼즐앱을 개발하였습니다. 자료구조 개념을 사용하여 알파벳 순서를
-            맞추는 게임을 할 수 있습니다.
+            React Native를 이용해 단어 퍼즐 앱 워디(Wordie)을 개발하였습니다.
             <br />
             <br />
-            <a href="https://play.google.com/store/apps/details?id=com.crowd.wordie&pli=1">
-              여기
-            </a>
-            에서 플레이스토어에 배포된 앱을 확인할 수 있습니다.
+            큐, 스택 등의 자료구조 개념을 사용하여 단어의 알파벳 순서를 맞추는
+            게임을 제공합니다.
+            <br />
+            <br />
+            안드로이드 플레이스토어에 배포되었으나 현재는 배포가 중단된
+            상태입니다.
           </p>
 
           <TechStack
@@ -400,36 +385,11 @@ const Resume = () => {
 
       <Section>
         <div className="desc">
-          <h1>복주머니 모바일 웹</h1>
-          <p>
-            설날에 사용될 수 있는 복주머니 모바일 웹을 개발했습니다. 복주머니에
-            메시지를 담아 상대방의 방에 두고 올 수 있습니다.
-          </p>
-          <TechStack
-            stacks={[
-              {
-                name: "React",
-                icon: "react",
-              },
-              {
-                name: "React Router",
-                icon: "reactrouter",
-              },
-            ]}
-          />
-        </div>
-        <Image
-          alt="bok1"
-          src="/bok-1.png"
-          style={{
-            objectFit: "contain",
-          }}
-        />
-      </Section>
-
-      <Section>
-        <div className="desc">
-          <h1>피크닉 정원 만들기 전시</h1>
+          <h1>
+            <a href="https://piknic-piet-oudolf.netlify.app/">
+              피크닉 정원 만들기 전시
+            </a>
+          </h1>
           <p>
             키오스크 전시공간 피크닉의 전시 `정원 만들기`에 사용될 키오스크를
             개발하였습니다.
@@ -438,10 +398,6 @@ const Resume = () => {
             마우스 드래그 앤 드롭으로 정원 설계도를 이동하고 확대 및 축소하며
             설계도를 탐색할 수 있습니다. 설계도에 표기된 구역을 클릭하면 각각의
             자세한 식재 정보를 확인할 수 있습니다.
-            <br />
-            <br />
-            <a href="https://piknic-piet-oudolf.netlify.app/">여기</a>에서
-            배포된 내용을 확인할 수 있습니다.
           </p>
           <TechStack
             stacks={[
@@ -495,30 +451,25 @@ const Resume = () => {
 };
 
 const Section = styled.div`
-  border-top: 1px solid gainsboro;
-
-  &:last-child {
-    border-bottom: 1px solid gainsboro;
-  }
+  margin-bottom: 2em;
 
   h1 {
     font-size: 1.2em;
     font-weight: 500;
-    letter-spacing: 2px;
-    margin-left: 0.8em;
-    margin-bottom: 0.5em;
   }
 
   p {
-    padding-right: 2em;
+    padding-right: 1em;
     word-break: keep-all;
+    text-align: left;
   }
-
-  padding: 2em 0;
 
   @media only screen and (max-width: 480px) {
     height: 100svh;
     margin-top: 0;
+
+    padding-left: 2em !important;
+    padding-right: 2em !important;
 
     display: flex;
     flex-direction: column;
@@ -537,7 +488,7 @@ const Section = styled.div`
     }
 
     p {
-      font-size: min(2.5vh, 4vw);
+      font-size: min(2vh, 4vw);
     }
 
     /* &:first-child {
@@ -563,8 +514,10 @@ const Section = styled.div`
     display: flex;
 
     .desc {
-      flex: 1;
-      padding-left: 1em;
+      flex: 0.6;
+      min-width: 360px;
+      padding: 1em;
+      padding-top: 0;
 
       display: flex;
       flex-direction: column;
@@ -597,7 +550,7 @@ const mediaStyle = css`
 
   flex: 1;
   width: 300px;
-  height: 260px;
+  height: 300px;
 
   @media only screen and (max-width: 480px) {
     margin-top: 16px;

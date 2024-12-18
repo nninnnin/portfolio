@@ -6,10 +6,15 @@ const Header = ({ children }) => {
 };
 
 const Container = styled.h1`
-  letter-spacing: 9px;
-  font-weight: 600;
+  font-size: 2em;
 
-  padding: 1em;
+  letter-spacing: 4px;
+  font-weight: 700;
+
+  padding: 12.8px;
+  padding-top: 25.6px;
+  padding-bottom: calc(25.6px + 12.8px);
+
   scroll-snap-align: start;
 
   @media only screen and (max-width: 480px) {
@@ -19,7 +24,7 @@ const Container = styled.h1`
   }
 
   @media only screen and (max-height: 620px) {
-    display: none;
+    /* display: none; */
   }
 `;
 

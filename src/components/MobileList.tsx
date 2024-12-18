@@ -4,9 +4,20 @@ import React from "react";
 const MobileList = () => {
   return (
     <Container>
-      <h1>작업물 열람</h1>
+      <div
+        style={{
+          fontSize: "2.5em",
+          color: "black",
+          borderRadius: "50%",
+          display: "flex",
+          whiteSpace: "nowrap",
+          fontWeight: "700",
+        }}
+      >
+        👾 프로젝트 📱
+      </div>
 
-      <Notice>스크롤을 내려주세요</Notice>
+      <Notice>스크롤을 내려주세요!</Notice>
     </Container>
   );
 };
@@ -36,7 +47,7 @@ const Notice = styled.div`
     }
   }
 
-  animation: blink 5s infinite ease-in-out;
+  animation: blink 1.5s infinite ease-in-out;
 
   position: absolute;
   bottom: 16px;
