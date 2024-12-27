@@ -20,11 +20,43 @@ const Resume = () => {
       <Section>
         <div className="desc">
           <h1>
+            <a href="https://treasure-sb.kr/">성북마을 보물찾기</a>
+          </h1>
+          <p>
+            성북구의 문화유산 체험과 교육을 위한 모바일 웹 애플리케이션
+            `성북마을 보물찾기`를 개발하였습니다.
+            <br />
+            <br />
+            실시간 위치정보를 기반으로 AR 컨텐츠를 트리거할 수 있으며, 총 5종의
+            AR 참새와 함께 성북구의 문화유산과 관련된 퀴즈를 풀 수 있습니다.
+            정답과 오답, 안내 상태에 따라 참새가 다양한 애니메이션으로 반응하여
+            유저에게 즐거움을 줍니다.
+          </p>
+        </div>
+
+        <Video
+          controls
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ objectFit: "cover" }}
+        >
+          <source
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/sb-treasure-pf.mov"
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+
+      <Section>
+        <div className="desc">
+          <h1>
             <a href="https://www.yongdamplay.co.kr/">용담플레이</a>
           </h1>
           <p>
-            제주시 용담 1동의 문화유산 체험을 위한 AR 컨텐츠 모바일 기반 웹
-            애플리케이션 `용담 플레이`를 개발하였습니다.
+            제주시 용담 1동의 문화유산 체험을 위한 모바일 웹 애플리케이션 `용담
+            플레이`를 개발하였습니다.
             <br />
             <br />
             Geolocation API를 통해 전달되는 실시간 위치정보를 기반으로 지도 상
@@ -37,7 +69,14 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video autoPlay loop muted playsInline style={{ objectFit: "cover" }}>
+        <Video
+          controls
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ objectFit: "cover" }}
+        >
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/yongdam-play-pf.mov"
             type="video/mp4"
@@ -64,7 +103,14 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
+        <Video
+          controls
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ objectFit: "contain" }}
+        >
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/cheongju-main.mov"
             type="video/mp4"
@@ -141,7 +187,7 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video autoPlay loop muted playsInline>
+        <Video controls autoPlay loop muted playsInline>
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/ydp-whole.mp4"
             type="video/mp4"
@@ -167,7 +213,14 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
+        <Video
+          controls
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ objectFit: "contain" }}
+        >
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/ydp-ar.mp4"
             type="video/mp4"
@@ -221,7 +274,7 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video autoPlay loop muted playsInline>
+        <Video controls autoPlay loop muted playsInline>
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%A9%E1%84%89%E1%85%A7%E1%86%AB%E1%84%83%E1%85%B5%E1%84%8F%E1%85%A9%E1%84%83%E1%85%A5-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9-%E1%84%87%E1%85%B5%E1%84%83%E1%85%B5%E1%84%8B%E1%85%A9.mp4"
             type="video/mp4"
