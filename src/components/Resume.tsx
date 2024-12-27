@@ -20,6 +20,34 @@ const Resume = () => {
       <Section>
         <div className="desc">
           <h1>
+            <a href="https://www.yongdamplay.co.kr/">용담플레이</a>
+          </h1>
+          <p>
+            제주시 용담 1동의 문화유산 체험을 위한 AR 컨텐츠 모바일 기반 웹
+            애플리케이션 `용담 플레이`를 개발하였습니다.
+            <br />
+            <br />
+            Geolocation API를 통해 전달되는 실시간 위치정보를 기반으로 지도 상
+            가까운 거점을 선택하여 총 7종의 AR 컨텐츠를 확인할 수 있으며 완료된
+            거점의 정보가 모험경로에 순서대로 표시됩니다.
+            <br />
+            <br />
+            모험을 마치며 용을 부화시킬 수 있으며, 부화가 완료되었을 때 PWA의
+            경우 유저에게 푸시알림을 통해 부화 완료를 알립니다.
+          </p>
+        </div>
+
+        <Video autoPlay loop muted playsInline style={{ objectFit: "cover" }}>
+          <source
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/yongdam-play-pf.mov"
+            type="video/mp4"
+          />
+        </Video>
+      </Section>
+
+      <Section>
+        <div className="desc">
+          <h1>
             <a href="https://www.wishfullmoon.kr/">청주에 뜬 달</a>
           </h1>
           <p>
@@ -74,7 +102,16 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
+        <Video
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            objectFit: "contain",
+            backgroundColor: "white",
+          }}
+        >
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/korea-memorial.mp4"
             type="video/mp4"
