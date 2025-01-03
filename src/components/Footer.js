@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <Container>
-      <div>이동규, Web Developer</div>
+      <div>웹 프론트엔드 개발자 이동규</div>
       <div>nninnnin7@gmail.com</div>
     </Container>
   );

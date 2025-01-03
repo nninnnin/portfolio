@@ -91,7 +91,7 @@ const Resume = () => {
 
         <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
           <source
-            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/cheongju-main.mov"
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/wish-fullmoon-cropped.mp4"
             type="video/mp4"
           />
         </Video>
