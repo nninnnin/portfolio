@@ -34,14 +34,7 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video
-          controls
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{ objectFit: "cover" }}
-        >
+        <Video autoPlay loop muted playsInline style={{ objectFit: "cover" }}>
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/sb-treasure-pf.mov"
             type="video/mp4"
@@ -69,14 +62,7 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video
-          controls
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{ objectFit: "cover" }}
-        >
+        <Video autoPlay loop muted playsInline style={{ objectFit: "cover" }}>
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/yongdam-play-pf.mov"
             type="video/mp4"
@@ -103,14 +89,7 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video
-          controls
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{ objectFit: "contain" }}
-        >
+        <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/cheongju-main.mov"
             type="video/mp4"
@@ -155,11 +134,11 @@ const Resume = () => {
           playsInline
           style={{
             objectFit: "contain",
-            backgroundColor: "white",
+            backgroundColor: "black",
           }}
         >
           <source
-            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/korea-memorial.mp4"
+            src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/korea-memorial-cropped.mp4"
             type="video/mp4"
           />
         </Video>
@@ -187,7 +166,7 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video controls autoPlay loop muted playsInline>
+        <Video autoPlay loop muted playsInline>
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/ydp-whole.mp4"
             type="video/mp4"
@@ -213,14 +192,7 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video
-          controls
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{ objectFit: "contain" }}
-        >
+        <Video autoPlay loop muted playsInline style={{ objectFit: "contain" }}>
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/ydp-ar.mp4"
             type="video/mp4"
@@ -274,7 +246,7 @@ const Resume = () => {
           </p>
         </div>
 
-        <Video controls autoPlay loop muted playsInline>
+        <Video autoPlay loop muted playsInline>
           <source
             src="https://justin-cms-images.s3.ap-northeast-2.amazonaws.com/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%A9%E1%84%89%E1%85%A7%E1%86%AB%E1%84%83%E1%85%B5%E1%84%8F%E1%85%A9%E1%84%83%E1%85%A5-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9-%E1%84%87%E1%85%B5%E1%84%83%E1%85%B5%E1%84%8B%E1%85%A9.mp4"
             type="video/mp4"
