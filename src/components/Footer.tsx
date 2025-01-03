@@ -1,10 +1,21 @@
-import styled from "styled-components/macro";
 import React from "react";
+import styled from "styled-components/macro";
+
+import useViewportType from "@/hooks/useViewportType";
 
 const Footer = () => {
+  const { isMobile } = useViewportType();
+
   return (
     <Container>
-      <div>웹 프론트엔드 개발자 이동규</div>
+      {isMobile ? (
+        <>
+          <div>이동규</div>
+          <div>Frontend (Web) Developer</div>
+        </>
+      ) : (
+        <div>이동규, Web Frontend Developer</div>
+      )}
       <div>nninnnin7@gmail.com</div>
     </Container>
   );
@@ -12,7 +23,6 @@ const Footer = () => {
 
 const Container = styled.footer`
   padding-bottom: 2em;
-  padding-right: 2em;
 
   position: relative;
   display: flex;
@@ -26,6 +36,7 @@ const Container = styled.footer`
 
   @media screen and (max-width: 480px) {
     height: 100svh;
+    padding-right: 2em;
   }
 
   & > div {
