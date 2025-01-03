@@ -585,7 +585,7 @@ const Section = styled.div`
     }
 
     p {
-      font-size: min(2vh, 4vw);
+      font-size: min(2vh, 3.5vw);
     }
 
     /* &:first-child {
